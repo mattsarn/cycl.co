@@ -31,7 +31,7 @@ analysis. A demand prediction program has been used for cities like Chicago to h
 the balancing problem, but I may include my own just for some extra practice.
 
 ##Packages Used
-*Pandas
-*Seaborn
-*NumPy
-*scikit-learn
+* Pandas
+* Seaborn
+* NumPy
+* scikit-learn
