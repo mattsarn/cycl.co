@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cycl.co</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Cycl.co</h1>
+                        <h3>A data science examination of the Bay Area Bike Sharing Program via clustering analysis<br>
+                        <br>Matthew Sarni Capstone Project <br>General Assembly Data Science<br>Santa Monica, CA</p></h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://github.com/mattsarn" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/matthewsarni" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+	<div class="content-section-a">
+		<div class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                	<hr class="section-heading-spacer col-lg-offset-5">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">About</h2>
+                    <p class="lead">The central concept of bike sharing programs is to provide<br> 
+                    free or affordable access to bicycles for short-distance trips in an urban area<br> 
+                    as an alternative to motorised public transport or private vehicles, thereby<br>
+                    reducing traffic congestion, noise, and air pollution.<br>
+                    <br>Beginning in 2013, the Bay Area Bike Share has experienced continued growth<br>
+                    and has meticulously kept track of its data.<br>
+                    <br>Focusing on 2014 and San Francisco proper, this project aims<br>
+                    to create personalities for bike trips in an effort to analyze and<br>
+                    better understand bike share use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<a  name="services"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">The Clusters</h2>
+                    <p class="lead">Using features such as "Duration of Trip", "Distance of Travel", 
+                    "Day of Week", and "Time of Day" I performed a clustering analysis using
+                    K-Means and justified my k using the silhouette score.<br><br> The graphic to the right
+                    displays a sample of trips, their predicted routes, and color coordinates them by cluster.
+                    The data consisted of over 350,000 rows, so when it came to visualizations I had
+                    to make due with a sample. Not for lack of effort though.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/clustered.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Looking at Duration</h2>
+                    <p class="lead">As part of my exploratory data analysis, I created some visuals
+                    to help better explain the distribution of data. I used ArcGIS to calculate the routes
+                    between origins and destinations.<br><br> The graphic to the left depicts the duration 
+                    of the trip with the width of the line serving as the length of measurement. 
+                    The fatter the line, the longer the trip took to complete. I only used a sample
+                    of the data because my computer lacked the power to iterate through the whole dataframe.
+                    We can assume that the long trip pictured to left indicates the customer most likely
+                    ran errands.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/trip_duration.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Going the Distance</h2>
+                    <p class="lead">The graphic pictured to the right colors routes by distance.
+                    The deeper the red the longer the distance the customer covered. The more yellow,
+                    the shorter the distance. Nothing totally unusual here, but the visualization
+                    is cool and helps understand the data.<br><br>
+                    Honestly, I could've played around for hours with maps. The data has so many stories to tell, and there are so many tools out there.
+                    Social graphs are something I plan on looking into soon, with the terminals as the nodes and the bicycle trips
+                    as the edges. It'll certainly help in understanding how the terminals interact with each other.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/distance.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+	</div>
+	
+    <!-- /.content-section-a -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Type of Bicyclist</h2>
+                    <p class="lead">A very simple graphic here. It shows the route and color by type of rider.
+                    Purple indicates a "customer", while red is representative of the route taken by
+                    a regular "subscriber", or someone who pays for a membership.<br><br>
+                	It'd be interesting to see how the data evolves with the addition of new terminals. As you can tell by the above
+                	graphics, they are largely concentrated in the Financial District and adjacent areas-areas with a high job concentration.
+                	<br><br>However, it seems the dichotomy between bike sharing terminals and bike rental businesses will remain. Bike rental shops
+                	seem to offer better rates, and they don't have to worry about demand or the balancing problem. </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/customer_type.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+<div class="content-section-b">
+		<div class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                	<hr class="section-heading-spacer col-lg-offset-5">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Special Thanks and Notes</h2>
+                    <p class="lead">Big thank you to:<br><br>
+                    <span style="font-weight:bold">Greg Kamradt</span>, my buddy and data science confidant. The friend that continued to help me despite
+                    his frustration.<br><br>
+                    <span style="font-weight:bold">Tim Hou</span>, my General Assembly classmate who was always willing to lend a helping hand.<br><br>
+                    And last but not least, the General Assembly Staff, especially <span style="font-weight:bold">Dan Wilhelm</span> and <span style="font-weight:bold">Frank Portman</span>.
+                    I'll miss our long slack conversations.<br><br>
+                    End note: This project is still ongoing. Adjustments will be made, features will be added, website will get prettier.<br>
+                    Who knows, maybe I'll add a k-NN prediction element.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+	</div>
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect with Matt:</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                    	<li>
+                    		<a href="mailto:matthew.sarni@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                    	</li>
+                        <li>
+                            <a href="https://github.com/mattsarn" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/matthewsarni" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <p class="copyright text-muted small">Copyright &copy; Cycl.co 2015. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
