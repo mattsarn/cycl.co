@@ -14,7 +14,6 @@ reducing traffic congestion, noise, and air pollution.
 Beginning in 2013, the Bay Area Bike Share has experienced continued growth
 and has meticulously kept track of its data.
 
-Inline-style: 
 ![alt text](https://github.com/mattsarn/cycl.co/blob/master/webapp/static/dist/img/clustered.png "Clusters")
 
 Focusing on 2014 and San Francisco proper, this project aims
